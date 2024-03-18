@@ -3,6 +3,10 @@
     color: #d4d4d4;
 }
 
+hr{
+    width: 100%;
+}
+
 .LinkToSocialMedia{
     text-align: right;
     vertical-align: top;
@@ -11,6 +15,7 @@
 
 header{
     text-align: center;
+    margin: 10px 10px 10px 10px;
 }
 
 .HeaderPicture{
@@ -46,11 +51,4 @@ footer{
     text-align: center;
     margin: 10px;
     color: #71706F;
-}
-
-h1{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
 }
