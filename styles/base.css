@@ -2,6 +2,52 @@
     background-color: #1f1f1f;
     color: #d4d4d4;
 }
+
+.LinkToSocialMedia{
+    text-align: right;
+    vertical-align: top;
+    margin: 5px;
+}
+
+header{
+    text-align: center;
+}
+
+.HeaderPicture{
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+.Navigationbar{
+    margin: 10px;
+}
+
+.Navigationbar a {
+    display: inline-block;
+    color: #d4d4d4;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 150%;
+    border-radius: 10px;
+}
+.Navigationbar a:hover, .Navigationbar a.active:hover {
+    background-color: #d4d4d4;
+    color: #1f1f1f;
+    text-align: center;
+}
+.Navigationbar a.active {
+    background-color: #A80000;
+    color: #d4d4d4;
+}
+
+footer{
+    text-align: center;
+    margin: 10px;
+    color: #71706F;
+}
+
 h1{
     margin-left: auto;
     margin-right: auto;
