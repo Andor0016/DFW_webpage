@@ -2,11 +2,110 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Báló Andor - C8PJ6K">
+    <meta name="author" content="Szili Dominik - AUK2C8">
+    <meta name="description" content="Webterv projekt, a Down For Whatever zenekar általunk újragondolt változata.">
+    <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/landingpage.css">
     <link rel="icon" type="image/x-icon" href="resources/DFW_Logo.ico">
 </head>
 <body>
-    <h1>Coming soon...</h1>
+    <header>
+        <div class="LinkToSocialMedia">
+            <a href="https://www.instagram.com/downforwhateverofficial/" target=”_blank”>
+                <img src="./resources/logos/instagram_logo.png" alt="Down For Whatever" title="Down For Whatever" height="30" width="30">
+            </a>
+            <a href="https://www.facebook.com/downforwhateverofficial" target=”_blank”>
+                <img src="./resources/logos/facebook_logo.png" alt="Down For Whatever" title="Down For Whatever" height="30" width="30">
+            </a>
+        </div>
+        <a href="index.html" class="HeaderPicture">
+            <img src="./resources/logos/DFW_LOGO_WHT.png" alt="Down For Whatever" title="Down For Whatever" height="200" width="560">
+        </a>
+        <div class="Navigationbar">
+            <a href="index.html" class="active">Kezdőlap</a>
+            <a href="pages/members.html">Tagok</a>
+            <a href="pages/concerts.html">Koncertek</a>
+            <a href="pages/discography.html">Diszkográfia</a>
+            <a href="pages/contact.html">Kapcsolat</a>
+            <a href="pages/webshop.html">Webshop</a>
+            <a href="pages/login.html">Bejelentkezés</a>
+        </div>
+        <hr>
+    </header>
+    <div id="new-album-check">
+        <h1>MONDD EL</h1>
+        <img src="./resources/DFW_Mondd_El_Web.jpg" alt="Down For Whatever - Mondd el albumcover">
+        <h3>Új album!</h3>
+        <a href="https://open.spotify.com/album/1QmiIZjjIVNJjrUXJmnAkb?si=GeCeTzEGRwK2o_0pxWULQA" target=”_blank”>Megnyitás</a>
+    </div>
+    <div id="check-new-clips">
+        <h1>Hallgass bele!</h1>
+        <h4>Mi sem szoktunk tétlenkedni, nézd meg a négy legfrissebb klippünk:</h4>
+        <div id="check-our-new-clips">
+            <iframe src="https://www.youtube.com/embed/pPLUVgkU3So?si=ffkTVbpIxCqhyhDv"
+                    title="YouTube video player" allow="encrypted-media; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/CEedrHMkcfw?si=8LRMCzO-ipQLg-K9"
+                    title="YouTube video player" allow="encrypted-media; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/KuXD0drrLUM?si=dwcNUve_MXPFXGbh"
+                    title="YouTube video player" allow="encrypted-media;picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/DKgX_RJuoHE?si=RTl6FK6-IaxI4pKZ"
+                    title="YouTube video player" allow="encrypted-media; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="next-few-concert">
+        <h1>Koncertek</h1>
+        <h4>Hol találkozunk?</h4>
+        <table>
+            <tbody>
+            <tr>
+                <td>2024.03.23.</td>
+                <td>Szeged</td>
+                <td>IH Rendezvényközpont</td>
+                <td><a href="./pages/webshop/ticket.html">Jegyvásárlás</a></td>
+            </tr>
+            <tr>
+                <td>2024.03.29.</td>
+                <td>Tatabánya</td>
+                <td>Roxxy music</td>
+                <td><a href="./pages/webshop/ticket.html">Jegyvásárlás</a></td>
+            </tr>
+            <tr>
+                <td>2024.04.06.</td>
+                <td>Hajdúszoboszló</td>
+                <td>Rock café</td>
+                <td><a href="./pages/webshop/ticket.html">Jegyvásárlás</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="./pages/concerts.html" >További koncertek</a>
+    </div>
+    <footer>
+        <hr>
+        <div class="Links">
+            <div class="Navigationbar">
+                <a href="https://www.facebook.com/downforwhateverofficial" target=”_blank”>
+                    <img src="./resources/logos/facebook_logo.png" alt="Down For Whatever" title="Down For Whatever" height="30" width="30">
+                </a>
+                <a href="https://www.youtube.com/downforwhateverofficial" target=”_blank”>
+                    <img src="./resources/logos/youtube_logo.png" alt="Down For Whatever" title="Down For Whatever" height="30" width="35">
+                </a>
+                <a href="https://www.instagram.com/downforwhateverofficial/" target=”_blank”>
+                    <img src="./resources/logos/instagram_logo.png" alt="Down For Whatever" title="Down For Whatever" height="30" width="30">
+                </a>
+                <a href="https://open.spotify.com/artist/6YbTZWEYHU5DcbuCya4KnU?si=94Nj8CS0QFeZjh0FYs-fsA&nd=1" target=”_blank”>
+                    <img src="./resources/logos/spotify_logo.png" alt="Down For Whatever" title="Down For Whatever" height="30" width="30">
+                </a>
+            </div>
+        </div>
+        <p class="Watermark"><a href="https://www.youtube.com/watch?v=5wb5HWVh6Fs">©</a> 2024 DOWN FOR WHATEVER</p>
+    </footer>
 </body>
+
 </html>

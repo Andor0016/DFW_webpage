@@ -8,3 +8,5 @@
 ### Black	=>   #1f1f1f
 ### Red 	=>   #731010
 ### Light red 	=>   #A80000
+
+### Number of easter eggs => 1
