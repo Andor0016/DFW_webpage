@@ -52,3 +52,7 @@ footer{
     margin: 10px;
     color: #71706F;
 }
+
+footer a{
+    text-decoration: none;
+}
