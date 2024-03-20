@@ -12,6 +12,15 @@ hr{
     vertical-align: top;
     margin: 5px;
 }
+.icon-for-social-media{
+    width: 2rem;
+    height: 2rem;
+}
+
+#band-logo-header{
+    height: 12.5rem;
+    width: 35rem;
+}
 
 header{
     text-align: center;

@@ -1,0 +1,13 @@
+#content-container{
+    margin: auto;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo{
+    width: 25rem;
+}
