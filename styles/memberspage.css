@@ -10,4 +10,17 @@
 
 .photo{
     width: 25rem;
+    display: block;
+    height: auto;
 }
+
+.info-table{
+    margin: 5rem 2rem;
+    width: 21rem;
+    text-align: left;
+}
+
+.info-table caption{
+    font-size: larger;
+}
+
