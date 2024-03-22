@@ -2,20 +2,23 @@ main{
     margin: 1rem;
 }
 
-#table-outer-div{
-}
-
 table{
-    width: 65rem;
+    width: 50rem;
     padding: 1rem;
     text-align: center;
     border-collapse: collapse;
     margin:auto;
+
 }
 
 .name-of-section{
     text-align: left;
     padding-left: 5rem;
+    background-color: #731010;
+}
+
+.name-of-column td{
+    text-align: center;
     background-color: #731010;
 }
 

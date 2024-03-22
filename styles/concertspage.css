@@ -20,6 +20,7 @@ table{
     width: 35rem;
     text-align: center;
     border-collapse: collapse;
+    margin: 0.5rem;
 }
 
 td{
@@ -50,6 +51,7 @@ td a:hover{
 
     width: 35rem;
     height: auto;
+    margin: 0.5rem;
 }
 
 #bottom-text{
