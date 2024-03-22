@@ -17,7 +17,7 @@
 
 table{
     padding: 1rem;
-    width: 35rem;
+    width: 45rem;
     text-align: center;
     border-collapse: collapse;
     margin: 0.5rem;
@@ -49,7 +49,7 @@ td a:hover{
 
 #band-on-stage{
 
-    width: 35rem;
+    width: 45rem;
     height: auto;
     margin: 0.5rem;
 }

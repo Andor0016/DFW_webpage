@@ -1,3 +1,57 @@
 main{
     margin: 1rem;
 }
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact-image{
+    width: 45rem;
+    margin: 0.5rem;
+}
+
+#mssg-form-base{
+    width: 45rem;
+    margin: 0.5rem;
+}
+
+#mssg-form-base label{
+    margin-left:0.5rem;
+}
+
+#mssg-form-base input{
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #71706F;
+    border-radius: 4px;
+}
+
+#mssg-form-base textarea{
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #71706F;
+    border-radius: 4px;
+    height: 20rem;
+}
+
+#mssg-form-button{
+    width: 46rem;
+    background-color: #A80000;
+    color: #d4d4d4;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    border: 0.1rem solid #71706F;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mssg-form-button:hover{
+    background-color: #731010;
+    border: 0.1rem solid #707070;
+}

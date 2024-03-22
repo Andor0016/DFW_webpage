@@ -8,6 +8,7 @@
     <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
     <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/contactpage.css">
     <link rel="icon" type="image/x-icon" href="../resources/DFW_Logo.ico">
 </head>
 <body>
@@ -35,13 +36,19 @@
     <hr>
 </header>
 <main>
-    <div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
+    <div class="flexbox">
+        <img src="../resources/DFW_contact.jpg" alt="Zenekari pacsi" id="contact-image">
+        <form method="GET" id="mssg-form-base">
+            <label for="nev">Vezetéknév:</label><br>
+            <input type="text" name="nev" id="nev" placeholder="Példa János"/><br>
+            <label for="mail">E-mail cím:</label><br>
+            <input type="email" name="mail" id="mail" placeholder="pelda.janos@dfw.com"><br>
+            <label for="tszam">Telefonszám:</label><br>
+            <input type="number" name="tszam" id="tszam" placeholder="06200000000"><br>
+            <label for="mssg">Üzenet:</label><br>
+            <textarea name="mssg" id="mssg" maxlength="1000" placeholder="Ide írd az üzeneted"></textarea><br>
+            <input type="submit" value="Küldés" id="mssg-form-button">
+        </form>
     </div>
 </main>
 <footer>
