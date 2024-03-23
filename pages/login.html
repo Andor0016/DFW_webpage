@@ -8,6 +8,7 @@
     <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
     <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/loginpage.css">
     <link rel="icon" type="image/x-icon" href="../resources/DFW_Logo.ico">
 </head>
 <body>
@@ -32,8 +33,34 @@
         <a href="./webshop.html">Webshop</a>
         <a href="./login.html" class="active">Bejelentkezés</a>
     </div>
+    <hr>
 </header>
-
+<main>
+    <div class="flexbox">
+        <div id="register-box">
+            <form method="GET" class="login-register-base">
+                <label for="nev">Név:</label><br>
+                <input type="text" name="nev" id="nev" placeholder="Példa János"/><br>
+                <label for="mail">E-mail cím:</label><br>
+                <input type="email" name="mail" id="mail" placeholder="pelda.janos@dfw.com"><br>
+                <label for="pass">Jelszó:</label><br>
+                <input type="password" name="pass" id="pass"><br>
+                <label for="pass-confirm">Jelszó megerősítése:</label><br>
+                <input type="password" name="pass-confirm" id="pass-confirm"><br>
+                <input type="submit" value="Regisztráció" class="login-register-button">
+            </form>
+        </div>
+        <div id="login-box">
+            <form method="GET" class="login-register-base">
+                <label for="mail-login">E-mail cím:</label><br>
+                <input type="email" name="mail-login" id="mail-login" placeholder="pelda.janos@dfw.com"><br>
+                <label for="pass-login">Jelszó:</label><br>
+                <input type="password-login" name="pass" id="pass-login"><br>
+                <input type="submit" value="Bejelentkezés" class="login-register-button">
+            </form>
+        </div>
+    </div>
+</main>
 <footer>
     <hr>
     <div class="Links">

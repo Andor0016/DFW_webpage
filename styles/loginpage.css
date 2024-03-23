@@ -1,0 +1,50 @@
+main{
+    margin: 1rem;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login-register-base{
+    width: 40rem;
+    margin: 0.5rem;
+    border: 0.15rem solid #71706F;
+    border-radius: 10px;
+    background-color: #d4d4d4;
+}
+
+.login-register-base label{
+    margin-left:0.5rem;
+    background-color: #d4d4d4;
+    color: #1f1f1f;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.login-register-base input{
+    width: 38rem;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #71706F;
+    border-radius: 4px;
+}
+
+.login-register-button{
+    width: 38rem;
+    background-color: #A80000;
+    color: #d4d4d4;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    border: 0.1rem solid #71706F;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-register-button:hover{
+    background-color: #731010;
+    border: 0.1rem solid #707070;
+}
