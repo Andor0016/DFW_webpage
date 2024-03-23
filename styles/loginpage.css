@@ -11,14 +11,23 @@ main{
 .login-register-base{
     width: 40rem;
     margin: 0.5rem;
+    padding: 0.5rem;
+    justify-content: center;
     border: 0.15rem solid #71706F;
     border-radius: 10px;
-    background-color: #d4d4d4;
+    background-color: #707070;
+}
+
+.login-register-base h2{
+    background-color: #707070;
+    color: #1f1f1f;
+    width: 40rem;
+    text-align: center;
 }
 
 .login-register-base label{
     margin-left:0.5rem;
-    background-color: #d4d4d4;
+    background-color: #707070;
     color: #1f1f1f;
     font-weight: bold;
     font-size: larger;
@@ -32,19 +41,21 @@ main{
     border-radius: 4px;
 }
 
+.button-outer-area{
+    text-align: center;
+    background-color: #707070;
+}
+
 .login-register-button{
-    width: 38rem;
+    width: 39rem;
     background-color: #A80000;
     color: #d4d4d4;
     font-weight: bold;
     padding: 1rem 0.5rem;
-    margin: 0.5rem;
-    border: 0.1rem solid #71706F;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .login-register-button:hover{
     background-color: #731010;
-    border: 0.1rem solid #707070;
 }

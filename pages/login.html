@@ -39,6 +39,7 @@
     <div class="flexbox">
         <div id="register-box">
             <form method="GET" class="login-register-base">
+                <h2>Regisztráció:</h2>
                 <label for="nev">Név:</label><br>
                 <input type="text" name="nev" id="nev" placeholder="Példa János"/><br>
                 <label for="mail">E-mail cím:</label><br>
@@ -47,16 +48,21 @@
                 <input type="password" name="pass" id="pass"><br>
                 <label for="pass-confirm">Jelszó megerősítése:</label><br>
                 <input type="password" name="pass-confirm" id="pass-confirm"><br>
-                <input type="submit" value="Regisztráció" class="login-register-button">
+                <div class="button-outer-area">
+                    <input type="submit" value="Regisztráció" class="login-register-button">
+                </div>
             </form>
         </div>
         <div id="login-box">
             <form method="GET" class="login-register-base">
+                <h2>Bejelentkezés:</h2>
                 <label for="mail-login">E-mail cím:</label><br>
                 <input type="email" name="mail-login" id="mail-login" placeholder="pelda.janos@dfw.com"><br>
                 <label for="pass-login">Jelszó:</label><br>
-                <input type="password-login" name="pass" id="pass-login"><br>
+                <input type="pass-login" name="pass" id="pass-login"><br>
+                <div class="button-outer-area">
                 <input type="submit" value="Bejelentkezés" class="login-register-button">
+                </div>
             </form>
         </div>
     </div>
