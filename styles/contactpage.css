@@ -39,7 +39,7 @@ main{
     height: 20rem;
 }
 
-.mssg-form-button{
+.mssg-form-button, #contact-social-buttons button{
     width: 46rem;
     background-color: #A80000;
     color: #d4d4d4;
@@ -51,7 +51,7 @@ main{
     cursor: pointer;
 }
 
-.mssg-form-button:hover{
+.mssg-form-button:hover, #contact-social-buttons button:hover{
     background-color: #731010;
     border: 0.1rem solid #707070;
 }

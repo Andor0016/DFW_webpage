@@ -34,6 +34,6 @@ main{
     border-radius: 10px;
 }
 
-.article-on-page:hover{
+.article-on-page a:hover{
     background-color: #731010;
 }
