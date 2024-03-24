@@ -1,0 +1,35 @@
+main{
+    margin: 0.5rem;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-on-page{
+    width: 20rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.article-on-page img{
+    width: 18rem;
+}
+
+.article-on-page a{
+    background-color: #A80000;
+    color: #d4d4d4;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}

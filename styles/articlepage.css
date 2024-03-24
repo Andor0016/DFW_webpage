@@ -1,0 +1,73 @@
+main{
+    margin: 0.5rem;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#article-picture{
+    width: 45rem;
+    margin: 0.5rem;
+}
+
+.description-for-article{
+    width: 45rem;
+    margin: 0.5rem;
+}
+
+.description-for-article h1{
+    font-weight: bold;
+    margin: 0.5rem;
+    font-size: 250%;
+}
+
+.description-for-article p{
+    margin-left:0.5rem;
+    color: #d4d4d4;
+}
+
+.description-for-article h3{
+    font-weight: bold;
+    margin: 0.5rem;
+    font-size: 150%;
+}
+
+.description-for-article label{
+    margin-left:0.5rem;
+    color: #d4d4d4;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.description-for-article input{
+    width: 30rem;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+}
+
+.description-for-article select{
+    width: 31rem;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+}
+
+.to-basket-button{
+    width: 39rem;
+    background-color: #A80000;
+    color: #d4d4d4;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.to-basket-button:hover{
+    background-color: #731010;
+}
