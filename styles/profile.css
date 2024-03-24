@@ -1,0 +1,75 @@
+main{
+    margin: 0.5rem;
+}
+
+.flexbox{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#user-data{
+    margin: auto;
+    display: inline-block;
+    font-size: 150%;
+
+}
+
+#button{
+    text-align: center;
+}
+
+.button-outer-area{
+    text-align: center;
+}
+
+#user-data a{
+    width: 25rem;
+}
+
+#user-data a, .modify-button{
+    background-color: #A80000;
+    color: #d4d4d4;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#user-data a:hover, .modify-button:hover{
+    background-color: #731010;
+}
+
+.modify-profile-data  h2{
+    font-weight: bold;
+    margin: 0.5rem;
+    font-size: 250%;
+}
+
+.modify-profile-data  h3{
+    font-weight: bold;
+    margin: 0.5rem;
+    font-size: 150%;
+}
+
+.modify-profile-data  label{
+    margin-left:0.5rem;
+    color: #d4d4d4;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.modify-profile-data input{
+    width: 30rem;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+}
+
+p{
+    text-align: center;
+}
