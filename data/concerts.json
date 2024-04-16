@@ -1,0 +1,42 @@
+[
+  {
+    "date":  "2024-03-02",
+    "town":  "Miskolc",
+    "place": "Helynekem"
+  },
+  {
+    "date":  "2024-03-09",
+    "town":  "Budapest",
+    "place": "Barba negra"
+  },
+  {
+    "date":  "2024-03-14",
+    "town":  "Kaposvár",
+    "place": "K-Központ"
+  },
+  {
+    "date":  "2024-03-16",
+    "town":  "Székesfehérvár",
+    "place": "FEZEN"
+  },
+  {
+    "date":  "2024-03-22",
+    "town":  "Veszprém",
+    "place": "Expresszó"
+  },
+  {
+    "date":  "2024-03-23",
+    "town":  "Szeged",
+    "place": "IH Rendezvényközpont"
+  },
+  {
+    "date":  "2024-03-29",
+    "town":  "Tatabánya",
+    "place": "Roxxy music"
+  },
+  {
+    "date":  "2024-04-06",
+    "town":  "Hajdúszoboszló",
+    "place": "Rock café"
+  }
+]

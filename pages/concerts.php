@@ -40,54 +40,17 @@
     <h1 id="upper-text" >Hol találkozunk?</h1>
     <div class="flexbox">
         <table>
-            <tr>
-                <td>2024.03.02.</td>
-                <td>Miskolc</td>
-                <td>Helynekem</td>
-                <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.03.09.</td>
-                <td>Budapest</td>
-                <td>Barba negra</td>
-                <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.03.14.</td>
-                <td>Kaposvár</td>
-                <td>K-Központ</td>
-                <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.03.16.</td>
-                <td>Székesfehérvár</td>
-                <td>FEZEN</td>
-                <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.03.22.</td>
-                <td>Veszprém</td>
-                <td>Expresszó</td>
-                <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.03.23.</td>
-                <td>Szeged</td>
-                <td>IH Rendezvényközpont</td>
-                <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.03.29.</td>
-                <td>Tatabánya</td>
-                <td>Roxxy music</td>
-                <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.04.06.</td>
-                <td>Hajdúszoboszló</td>
-                <td>Rock café</td>
-                <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
+            <?php
+                $concerts_data = json_decode(file_get_contents("../data/concerts.json"), true);
+                foreach ($concerts_data as $concert) {
+                    echo "<tr>";
+                    echo "<td>" . $concert["date"] . "</td>";
+                    echo "<td>" . $concert["town"] . "</td>";
+                    echo "<td>" . $concert["place"] . "</td>";
+                    echo "</tr>";
+                    echo "<td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>"
+                } 
+            ?>
         </table>
         <img src="../resources/DFW_koncert.jpg" alt="koncert hangulatfoto" id="band-on-stage">
     </div>
