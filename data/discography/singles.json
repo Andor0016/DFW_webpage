@@ -1,0 +1,128 @@
+[
+    {
+        "spotify": "https://open.spotify.com/album/03xR5ubC06Wh7urHD9eksp?si=sB_VdyMPQey9DRQ5eH3KXw",
+        "img": "../resources/covers/koteltanc-cover.jpg",
+        "alt": "Kötéltánc borító",
+        "name" :"Kötéltánc",
+        "year": "2024"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/2cURsWWLGmq7Lf5kc1KLEq?si=-cALoeNGTA6kGYLPkbu9ng",
+        "img": "../resources/covers/ebressz-fel-cover.jpg",
+        "alt": "Ébressz Fel borító",
+        "name" :"Ébressz Fel",
+        "year": "2023"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/6ODQkUXqSiAjFx0oE9fZPK?si=75cD2AvUTtmzGISAyoDSmg",
+        "img": "../resources/covers/voltam-leszek-cover.jpg",
+        "alt": "Voltam/Leszek borító",
+        "name" :"Voltam/Leszek",
+        "year": "2022"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/7LLzEHf7wrQ2QcNCFRHfi1?si=E3R9HYXMRGimp4vQHW9MUA",
+        "img": "../resources/covers/messze-meg-a-vege-cover.jpg",
+        "alt": "Messze Még a Vége borító",
+        "name" :"Messze Még a Vége",
+        "year": "2022"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/6JpYUmojYxv7zR5NjMG3Yr?si=JIRCcx6IQ9iQsyKNIMFvZA",
+        "img": "../resources/covers/szakits-szet-cover.jpg",
+        "alt": "Szakíts Szét borító",
+        "name" :"Szakíts Szét",
+        "year": "2021"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/2RTrSvFHPe6IEXv8tVCy8H?si=N_I-ILESSeWJJs8nmzVaUg",
+        "img": "../resources/covers/porszemek-a-fenyben-cover.jpg",
+        "alt": "Porszemek a Fényben borító",
+        "name" :"Porszemek a Fényben",
+        "year": "2021"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/5x8AW2nyzNKp2SR7F1HezX?si=nAn0Bod_QNedeBIAi0UwuA",
+        "img": "../resources/covers/megfagytal-cover.jpg",
+        "alt": "Megfagytál borító",
+        "name" :"Megfagytál",
+        "year": "2020"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/6XlGlf6KojTTNBT9HvziC5?si=8QroaO1CQiKiD3z6EpWj5g",
+        "img": "../resources/covers/hogy-lesz-tovabb-cover.jpg",
+        "alt": "Hogy Lesz Tovább? borító",
+        "name" :"Hogy Lesz Tovább?",
+        "year": "2019"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/7xwUfRWFaMXTCaeinth8CF?si=ItuYWfHVTSO6EcilxuJ7Yw",
+        "img": "../resources/covers/visszaut-cover.jpg",
+        "alt": "Visszaút borító",
+        "name" :"Visszaút",
+        "year": "2019"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/2fTDeeoz0Ed61sklx3eSAm?si=jUzQ02OkSS-A_Ht3f9sbvA",
+        "img": "../resources/covers/talan-cover.jpg",
+        "alt": "Talán borító",
+        "name" :"Talán",
+        "year": "2019"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/16zYIhju6XcXJm8ZTAjwcw?si=s17OP3vvQvej7gYiLIHlTg",
+        "img": "../resources/covers/ennyi-volt-cover.jpg",
+        "alt": "Ennyi Volt borító",
+        "name" :"Ennyi Volt",
+        "year": "2019"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/4TXDBBCPqIrJVZfsWq1b4p?si=7BSwRcWuRrmdrkD7TNtHfA",
+        "img": "../resources/covers/muvilag-cover.jpg",
+        "alt": "Művilág borító",
+        "name" :"Művilág",
+        "year": "2018"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/6roQh0qJAi4egsbHa305DJ?si=gTaG_E_mQSqr6sKR02I4Jg",
+        "img": "../resources/covers/nincs-helyed-cover.jpg",
+        "alt": "Nincs Helyed borító",
+        "name" :"Nincs Helyed",
+        "year": "2018"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/1DnbhprKOFrves65PZAzyG?si=4aVMerO5T6a8HK71p4W9mg",
+        "img": "../resources/covers/the-black-march-cover.jpg",
+        "alt": "The Black March borító",
+        "name" :"The Black March",
+        "year": "2016"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/7eTdYrtakYNQuTaEIpMX20?si=Cz8MmVngTaKmUy2J84wphA",
+        "img": "../resources/covers/the-last-chapter-cover.jpg",
+        "alt": "The Last Chapter borító",
+        "name" :"The Last Chapter",
+        "year": "2016"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/1zNmVGzFdEH1bT7Mu7aOT5?si=sP1wIZMLTqSU8fHHQAdROQ",
+        "img": "../resources/covers/alienation-cover.jpg",
+        "alt": "Alienation borító",
+        "name" :"Alienation",
+        "year": "2015"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/004Na31Uc57cU22GHpcLVv?si=H5rtkeSNTd2HulayvoJ7hw",
+        "img": "../resources/covers/alpha-and-omega-cover.jpg",
+        "alt": "Alpha & Omega borító",
+        "name" :"Alpha & Omega",
+        "year": "2015"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/7mLaxEz27ncetBAyjyl63u?si=viCE3KU0TV-2208ATrk8Dw",
+        "img": "../resources/covers/better-to-be-alone-cover.jpg",
+        "alt": "Better to Be Alone borító",
+        "name" :"Better to Be Alone",
+        "year": "2015"
+    }
+]

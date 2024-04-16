@@ -28,7 +28,7 @@
         <a href="../index.html">Kezdőlap</a>
         <a href="./members.html">Tagok</a>
         <a href="#" class="active">Koncertek</a>
-        <a href="./discography.html">Diszkográfia</a>
+        <a href="./discography.php">Diszkográfia</a>
         <a href="./contact.html">Kapcsolat</a>
         <a href="./webshop.html">Webshop</a>
         <a href="./chatbot.html">Chatbot</a>
@@ -43,12 +43,15 @@
             <?php
                 $concerts_data = json_decode(file_get_contents("../data/concerts.json"), true);
                 foreach ($concerts_data as $concert) {
+                    if($concert["date"] >= date("Y-m-d"))
+                    {
                     echo "<tr>";
                     echo "<td>" . $concert["date"] . "</td>";
                     echo "<td>" . $concert["town"] . "</td>";
                     echo "<td>" . $concert["place"] . "</td>";
+                    echo "<td><a href=\"./webshop/ticket.html\">Jegyvásárlás</a></td>";
                     echo "</tr>";
-                    echo "<td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>"
+                    }
                 } 
             ?>
         </table>

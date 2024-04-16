@@ -38,5 +38,40 @@
     "date":  "2024-04-06",
     "town":  "Hajdúszoboszló",
     "place": "Rock café"
+  },
+  {
+    "date":  "2024-05-25",
+    "town":  "Siófok",
+    "place": "Plázs"
+  },
+  {
+    "date":  "2024-07-",
+    "town":  "Dunaújváros",
+    "place": "Rockmaraton"
+  },
+  {
+    "date":  "2024-07-31",
+    "town":  "Székesfehérvár",
+    "place": "FEZEN"
+  },
+  {
+    "date":  "2024-08-03",
+    "town":  "Sárvár",
+    "place": "Vármeeting"
+  },
+  {
+    "date":  "2024-08-17",
+    "town":  "Jászberény",
+    "place": "Kawa Party"
+  },
+  {
+    "date":  "2024-08-29",
+    "town":  "Hajdúnánás",
+    "place": "Moto-Rock Weekend"
+  },
+  {
+    "date":  "2024-08-30",
+    "town":  "Alsóörs",
+    "place": "Tábor Fesztivál"
   }
 ]

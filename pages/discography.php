@@ -8,7 +8,7 @@
     <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
     <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/contactpage.css">
+    <link rel="stylesheet" href="../styles/discographypage.css">
     <link rel="icon" type="image/x-icon" href="../resources/DFW_Logo.ico">
 </head>
 <body>
@@ -28,8 +28,8 @@
         <a href="../index.html">Kezdőlap</a>
         <a href="./members.html">Tagok</a>
         <a href="./concerts.php">Koncertek</a>
-        <a href="./discography.php">Diszkográfia</a>
-        <a href="#" class="active">Kapcsolat</a>
+        <a href="#" class="active">Diszkográfia</a>
+        <a href="./contact.html">Kapcsolat</a>
         <a href="./webshop.html">Webshop</a>
         <a href="./chatbot.html">Chatbot</a>
         <a href="./login.html">Bejelentkezés</a>
@@ -37,30 +37,53 @@
     <hr>
 </header>
 <main>
-    <div class="flexbox">
-        <img src="../resources/DFW_contact.jpg" alt="Zenekari pacsi" id="contact-image">
-        <form method="GET" id="mssg-form-base">
-            <label for="nev">Név:</label><br>
-            <input type="text" name="nev" id="nev" placeholder="Példa János"><br>
-            <label for="mail">E-mail cím:</label><br>
-            <input type="email" name="mail" id="mail" placeholder="pelda.janos@dfw.com"><br>
-            <label for="tszam">Telefonszám:</label><br>
-            <input type="text" name="tszam" id="tszam" placeholder="06200000000"><br>
-            <label for="mssg">Üzenet:</label><br>
-            <textarea name="mssg" id="mssg" maxlength="1000" placeholder="Ide írd az üzeneted"></textarea><br>
-            <input type="submit" value="Küldés" class="mssg-form-button">
-        </form>
-    </div>
-    <div id="contact-social-buttons">
-        <button onClick="window.location.href='http://www.instagram.com/downforwhateverofficial';">
-            Instagram oldalunk
-        </button>
-        <button onClick="window.location.href='http://www.facebook.com/downforwhateverofficial';">
-            Facebook oldalunk
-        </button>
-        <button onClick="window.location.href='https://www.facebook.com/groups/512450672212444';">
-            Facebook csoportunk(Brotherhood)
-        </button>
+    <div id="table-outer-div">
+        <table>
+            <tr class="name-of-column">
+                <td>Album borító:</td>
+                <td>Név:</td>
+                <td>Kiadás éve:</td>
+                <td>Infó:</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="name-of-section">Albumok:</td>
+            </tr>
+            <?php
+                $album_data = json_decode(file_get_contents("../data/discography/albums.json"), true);
+                foreach($album_data as $album)
+                {
+                    echo "<tr>";
+                    echo "<td>";
+                    echo "<a href=\"" . $album["spotify"] . "\" target=”_blank”>";
+                    echo "<img src=\"" . $album["img"] . "\" alt=\"" . $album["alt"] . " borító\">";
+                    echo "</a>";
+                    echo "</td>";
+                    echo "<td>" . $album["name"] . "</td>";
+                    echo "<td>" . $album["year"] . "</td>";
+                    echo "<td>" . $album["numOfSong"] . "</td>";
+                    echo "</tr>";
+                }
+            ?>
+            <tr>
+                <td colspan="4" class="name-of-section">Singlek:</td>
+            </tr>
+            <?php 
+                $single_data = json_decode(file_get_contents("../data/discography/singles.json"), true);
+                foreach($single_data as $single)
+                {
+                    echo "<tr>";
+                    echo "<td>";
+                    echo "<a href=\"" . $single["spotify"] . "\" target=”_blank”>";
+                    echo "<img src=\"" . $single["img"] . "\" alt=\"" . $single["alt"] . " borító\">";
+                    echo "</a>";
+                    echo "</td>";
+                    echo "<td>" . $single["name"] . "</td>";
+                    echo "<td>" . $single["year"] . "</td>";
+                    echo "<td>single</td>";
+                    echo "</tr>";
+                }
+            ?>
+        </table>
     </div>
 </main>
 <footer>

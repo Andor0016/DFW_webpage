@@ -1,0 +1,26 @@
+[
+    {
+        "spotify": "https://open.spotify.com/album/1QmiIZjjIVNJjrUXJmnAkb?si=O2mSjU1hSoaFkXb1gTL4bA",
+        "img": "../resources/covers/mondd-el-cover.jpg",
+        "alt": "Mondd El album borító",
+        "name" :"Mondd El",
+        "year": "2022",
+        "numOfSong": "12 dal"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/6lUXOqO3kEFsbBxspBlaBA?si=yuDdt9M3SFGLqrP_fr-iIA",
+        "img": "../resources/covers/zuhanas-cover.jpg",
+        "alt": "Zuhanás album borító",
+        "name" :"Zuhanás",
+        "year": "2020",
+        "numOfSong": "14 dal"
+    },
+    {
+        "spotify": "https://open.spotify.com/album/6nXr3gTS9uM1MJw7gdHPwO?si=2O5FJznxRzeKWVIv7KOfIA",
+        "img": "../resources/covers/white-light-cover.jpg",
+        "alt": "White Light album borító",
+        "name" :"White Light",
+        "year": "2017",
+        "numOfSong": "12 dal"
+    }
+]
