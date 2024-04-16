@@ -21,11 +21,11 @@
             <img src="../resources/logos/facebook_logo.png" alt="Down For Whatever" title="Down For Whatever" class="icon-for-social-media">
         </a>
     </div>
-    <a href="../index.html" class="HeaderPicture">
+    <a href="../index.php" class="HeaderPicture">
         <img src="../resources/logos/DFW_LOGO_WHT.png" alt="Down For Whatever" title="Down For Whatever" id="band-logo-header">
     </a>
     <div class="Navigationbar">
-        <a href="../index.html">Kezdőlap</a>
+        <a href="../index.php">Kezdőlap</a>
         <a href="./members.html">Tagok</a>
         <a href="./concerts.php">Koncertek</a>
         <a href="#" class="active">Diszkográfia</a>
@@ -51,17 +51,18 @@
             <?php
                 $album_data = json_decode(file_get_contents("../data/discography/albums.json"), true);
                 foreach($album_data as $album)
-                {
-                    echo "<tr>";
-                    echo "<td>";
-                    echo "<a href=\"" . $album["spotify"] . "\" target=”_blank”>";
-                    echo "<img src=\"" . $album["img"] . "\" alt=\"" . $album["alt"] . " borító\">";
-                    echo "</a>";
-                    echo "</td>";
-                    echo "<td>" . $album["name"] . "</td>";
-                    echo "<td>" . $album["year"] . "</td>";
-                    echo "<td>" . $album["numOfSong"] . "</td>";
-                    echo "</tr>";
+                { ?>
+                    <tr>
+                    <td>
+                        <a href= <?php echo $album["spotify"]; ?> target=”_blank”>
+                            <img src= <?php echo $album["img"]; ?> alt= <?php echo $album["alt"]; ?> >
+                        </a>
+                    </td>
+                    <td> <?php echo $album["name"]; ?> </td>
+                    <td> <?php echo $album["year"]; ?> </td>
+                    <td> <?php echo $album["numOfSong"]; ?> </td>
+                    </tr>
+                    <?php
                 }
             ?>
             <tr>
@@ -70,17 +71,18 @@
             <?php 
                 $single_data = json_decode(file_get_contents("../data/discography/singles.json"), true);
                 foreach($single_data as $single)
-                {
-                    echo "<tr>";
-                    echo "<td>";
-                    echo "<a href=\"" . $single["spotify"] . "\" target=”_blank”>";
-                    echo "<img src=\"" . $single["img"] . "\" alt=\"" . $single["alt"] . " borító\">";
-                    echo "</a>";
-                    echo "</td>";
-                    echo "<td>" . $single["name"] . "</td>";
-                    echo "<td>" . $single["year"] . "</td>";
-                    echo "<td>single</td>";
-                    echo "</tr>";
+                { ?>
+                    <tr>
+                    <td>
+                        <a href= <?php echo $single["spotify"]; ?> target=”_blank”>
+                            <img src= <?php echo $single["img"]; ?> alt= <?php echo $single["alt"]; ?> >
+                        </a>
+                    </td>
+                    <td> <?php echo $single["name"]; ?></td>
+                    <td> <?php echo $single["year"]; ?></td>
+                    <td>single</td>
+                    </tr>
+                    <?php
                 }
             ?>
         </table>

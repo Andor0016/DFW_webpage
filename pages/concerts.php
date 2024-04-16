@@ -21,11 +21,11 @@
             <img src="../resources/logos/facebook_logo.png" alt="Down For Whatever" title="Down For Whatever" class="icon-for-social-media">
         </a>
     </div>
-    <a href="../index.html" class="HeaderPicture">
+    <a href="../index.php" class="HeaderPicture">
         <img src="../resources/logos/DFW_LOGO_WHT.png" alt="Down For Whatever" title="Down For Whatever" id="band-logo-header">
     </a>
     <div class="Navigationbar">
-        <a href="../index.html">Kezdőlap</a>
+        <a href="../index.php">Kezdőlap</a>
         <a href="./members.html">Tagok</a>
         <a href="#" class="active">Koncertek</a>
         <a href="./discography.php">Diszkográfia</a>
@@ -42,15 +42,17 @@
         <table>
             <?php
                 $concerts_data = json_decode(file_get_contents("../data/concerts.json"), true);
+                
                 foreach ($concerts_data as $concert) {
                     if($concert["date"] >= date("Y-m-d"))
-                    {
-                    echo "<tr>";
-                    echo "<td>" . $concert["date"] . "</td>";
-                    echo "<td>" . $concert["town"] . "</td>";
-                    echo "<td>" . $concert["place"] . "</td>";
-                    echo "<td><a href=\"./webshop/ticket.html\">Jegyvásárlás</a></td>";
-                    echo "</tr>";
+                    { ?>
+                    <tr>
+                    <td> <?php echo $concert["date"]; ?> </td>
+                    <td> <?php echo $concert["town"]; ?> </td>
+                    <td> <?php echo$concert["place"]; ?> </td>
+                    <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
+                    </tr>
+                    <?php 
                     }
                 } 
             ?>

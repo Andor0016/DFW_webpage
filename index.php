@@ -65,24 +65,24 @@
         <h4>Hol találkozunk?</h4>
         <table>
             <tbody>
-            <tr>
-                <td>2024.03.23.</td>
-                <td>Szeged</td>
-                <td>IH Rendezvényközpont</td>
-                <td><a href="./pages/webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.03.29.</td>
-                <td>Tatabánya</td>
-                <td>Roxxy music</td>
-                <td><a href="./pages/webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
-            <tr>
-                <td>2024.04.06.</td>
-                <td>Hajdúszoboszló</td>
-                <td>Rock café</td>
-                <td><a href="./pages/webshop/ticket.html">Jegyvásárlás</a></td>
-            </tr>
+            <?php
+
+                $concerts_data = json_decode(file_get_contents("./data/concerts.json"), true);
+                $i = 0;
+                foreach ($concerts_data as $concert) {
+                    if($concert["date"] >= date("Y-m-d") && $i < 3)
+                    { ?>
+                    <tr>
+                    <td> <?php echo $concert["date"]; ?> </td>
+                    <td> <?php echo $concert["town"]; ?> </td>
+                    <td> <?php echo$concert["place"]; ?> </td>
+                    <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
+                    </tr>
+                    <?php 
+                    $i++ ;
+                    }
+                } 
+                ?>
             </tbody>
         </table>
         <a href="./pages/concerts.php" >További koncertek</a>
