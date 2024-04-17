@@ -8,7 +8,7 @@
     <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
     <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/webshoppage.css">
+    <link rel="stylesheet" href="../styles/articlepage.css">
     <link rel="icon" type="image/x-icon" href="../resources/DFW_Logo.ico">
 </head>
 <body>
@@ -26,33 +26,58 @@
     </a>
     <div class="Navigationbar">
         <a href="../index.php">Kezdőlap</a>
-        <a href="./members.html">Tagok</a>
-        <a href="./concerts.php">Koncertek</a>
-        <a href="./discography.php">Diszkográfia</a>
-        <a href="./contact.html">Kapcsolat</a>
-        <a href="#"  class="active">Webshop</a>
-        <a href="./chatbot.html">Chatbot</a>
-        <a href="./login.html">Bejelentkezés</a>
+        <a href="members.html">Tagok</a>
+        <a href="concerts.php">Koncertek</a>
+        <a href="discography.php">Diszkográfia</a>
+        <a href="contact.html">Kapcsolat</a>
+        <a href="webshop.php" class="active">Webshop</a>
+        <a href="login.html">Bejelentkezés</a>
     </div>
     <hr>
 </header>
 <main>
-    <div class="flexbox">
-        <?php 
-            $webshop_data = json_decode(file_get_contents("../data/webshop.json"), true);
-
-        foreach($webshop_data as $article) 
-        { ?>
-            <div class="article-on-page">
-                <img src= <?php echo $article['img']; ?> alt= <?php echo $article['alt']; ?>>
-                <h2><?php echo $article['name']; ?></h2>
-                <h3><?php echo $article['price'] ?> HUF</h3>
-                <h5><?php echo substr($article['description'],0,35); ?>...</h5>
-                <a href="./article.php?id=<?php echo $article['id'] ?>"> Részletek</a><br>
-            </div>
-        <?php
+    <?php
+    $webshop_data = json_decode(file_get_contents("../data/webshop.json"), true);
+    foreach($webshop_data as $article) 
+    {
+        if($article['id'] == $_GET['id'])
+        {
+            $article_name = $article['name'];
+            $article_price = $article['price'];
+            $article_description = $article['description'];
+            $article_img = $article['img'];
+            $article_alt = $article['alt'];
+            $article_options = $article['options'];
+            break;
         }
-        ?>
+    }
+
+    $article_options = explode(",", $article_options);
+
+    ?>
+    <div class="flexbox">
+        <img src=<?php echo $article_img; ?> alt= <?php echo $article_alt; ?> id="article-picture">
+        <div class="description-for-article">
+            <h1><?php echo $article_name; ?></h1>
+            <p id="article-infobox"><?php echo $article_description; ?></p>
+            <h3><?php echo $article_price; ?> HUF</h3>
+            <form method="get" id="article-data-form">
+                <label for="polo-meret">Válaszd ki a póló méretét:</label><br>
+                <select name="polo-meret" id="polo-meret">
+                    <?php
+                        foreach($article_options as $option)
+                        {
+                        ?>
+                            <option value=<?php echo $option; ?>><?php echo $option; ?></option>";
+                        <?php
+                        }
+                        ?>
+                        </select> <br>
+                <label for="mennyiseg">Mennyiség:</label><br>
+                <input type="number" name="mennyiseg" id="mennyiseg"> <br>
+                <input type="submit" value="Kosárba teszem" class="to-basket-button">
+            </form>
+        </div>
     </div>
 </main>
 <footer>

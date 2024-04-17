@@ -8,7 +8,7 @@
     <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
     <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/webshoppage.css">
+    <link rel="stylesheet" href="../styles/basketpage.css">
     <link rel="icon" type="image/x-icon" href="../resources/DFW_Logo.ico">
 </head>
 <body>
@@ -37,23 +37,7 @@
     <hr>
 </header>
 <main>
-    <div class="flexbox">
-        <?php 
-            $webshop_data = json_decode(file_get_contents("../data/webshop.json"), true);
 
-        foreach($webshop_data as $article) 
-        { ?>
-            <div class="article-on-page">
-                <img src= <?php echo $article['img']; ?> alt= <?php echo $article['alt']; ?>>
-                <h2><?php echo $article['name']; ?></h2>
-                <h3><?php echo $article['price'] ?> HUF</h3>
-                <h5><?php echo substr($article['description'],0,35); ?>...</h5>
-                <a href="./article.php?id=<?php echo $article['id'] ?>"> Részletek</a><br>
-            </div>
-        <?php
-        }
-        ?>
-    </div>
 </main>
 <footer>
     <hr>

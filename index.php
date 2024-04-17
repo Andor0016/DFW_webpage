@@ -30,7 +30,7 @@
             <a href="pages/concerts.php">Koncertek</a>
             <a href="pages/discography.php">Diszkográfia</a>
             <a href="pages/contact.html">Kapcsolat</a>
-            <a href="pages/webshop.html">Webshop</a>
+            <a href="pages/webshop.php">Webshop</a>
             <a href="pages/chatbot.html">Chatbot</a>
             <a href="pages/login.html">Bejelentkezés</a>
         </div>

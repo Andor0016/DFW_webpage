@@ -1,4 +1,14 @@
 [
+    
+    {
+        "id": "0",
+        "name": "DFW koncertjegy",
+        "img": "../resources/webshop/DFW_ticket.jpg",
+        "alt": "Koncertjegy",
+        "description": "Az elkövetkező koncertjeinkre való belépésre feljosgosító jegy. A jegyed digitális formában kapod meg, és a beléptetéskor a QR kóddal azonosítunk. <strong>Figyelem! 18 év alattiak, csak kísérővel vehetnek részt koncerteken!</strong> A jegy átruházható, részletekért írj az <em>jegyinfo@dwf.hu</em> email címre.",
+        "price": "5500",
+        "options": "-"
+    },
     {
         "id": "1",
         "name": "DFW szimbólum póló",
@@ -106,14 +116,5 @@
         "description": "Téli sapka. Elején a zenekar hivatalos hímzett logója található.",
         "price": "4950",
         "options": "Szürke, Fekete"
-    },
-    {
-        "id": "13",
-        "name": "DFW koncertjegy",
-        "img": "../resources/webshop/DFW_ticket.jpg",
-        "alt": "Koncertjegy",
-        "description": "Az elkövetkező koncertjeinkre való belépésre feljosgosító jegy. A jegyed digitális formában kapod meg, és a beléptetéskor a QR kóddal azonosítunk. <strong>Figyelem! 18 év alattiak, csak kísérővel vehetnek részt koncerteken!</strong> A jegy átruházható, részletekért írj az <em>jegyinfo@dwf.hu</em> email címre.",
-        "price": "5500",
-        "options": "-"
     }
 ]
