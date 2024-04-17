@@ -36,6 +36,10 @@
     <hr>
 </header>
 <main>
+    <div id="basket_row">
+        <a href="./basket.php">
+            <img src="../resources/logos/basket_icon.png" alt="Kosár" class="icon-for-basket">
+        </a>
     <?php
     $webshop_data = json_decode(file_get_contents("../data/webshop.json"), true);
     foreach($webshop_data as $article) 
