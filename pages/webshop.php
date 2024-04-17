@@ -38,22 +38,22 @@
 </header>
 <main>
     <div class="flexbox">
-        <div class="article-on-page">
-            <img src="../resources/webshop/DFW_polo.jpg" alt="DFW szimbolum polo">
-            <h2>DFW szimbólum póló</h2>
-            <h3>6.950 HUF</h3>
-            <h5>Kiváló minőségű, fekete színű, kerek...</h5>
-            <a href="./webshop/article.html"> Részletek</a><br>
-            <a href="#">Kosárba teszem</a>
-        </div>
-        <div class="article-on-page">
-            <img src="../resources/webshop/DFW_ticket.jpg" alt="DFW koncertjegy">
-            <h2>DFW koncertjegy</h2>
-            <h3>5.500 HUF</h3>
-            <h5>Az elkövetkező koncertjeinkre való...</h5>
-            <a href="./webshop/ticket.html"> Részletek</a><br>
-            <a href="#">Kosárba teszem</a>
-        </div>
+        <?php 
+            $webshop_data = json_decode(file_get_contents("../data/webshop.json"), true);
+
+        foreach($webshop_data as $article) 
+        { ?>
+            <div class="article-on-page">
+                <img src= <?php echo $article['img']; ?> alt= <?php echo $article['alt']; ?>>
+                <h2><?php echo $article['name']; ?></h2>
+                <h3><?php echo $article['price'] ?> HUF</h3>
+                <h5><?php echo substr($article['description'],0,35); ?>...</h5>
+                <a href="./webshop/article.html"> Részletek</a><br>
+                <a href="#">Kosárba teszem</a>
+            </div>
+        <?php
+        }
+        ?>
     </div>
 </main>
 <footer>

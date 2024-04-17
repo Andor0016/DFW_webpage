@@ -3,9 +3,117 @@
         "id": "1",
         "name": "DFW szimbólum póló",
         "img": "../resources/webshop/DFW_szimbolum_polo.jpg",
-        "alt": "",
-        "description": "",
-        "price": "",
-        "options": ""
+        "alt": "Poló",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú póló <strong>UNISEX</strong> kivitelben. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>90%pamut, 10% elasztán </em>. Enyhén sztreccs.",
+        "price": "6950",
+        "options": "XS, S, M, L, XL, XXL"
+    },
+    {
+        "id": "2",
+        "name": "DFW király póló",
+        "img": "../resources/webshop/DFW_kiraly_polo.jpg",
+        "alt": "Poló",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú póló <strong>UNISEX</strong> kivitelben. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>90%pamut, 10% elasztán </em>. Enyhén sztreccs.",
+        "price": "6950",
+        "options": "XS, S, M, L, XL, XXL"
+    },
+    {
+        "id": "3",
+        "name": "DFW Mondd El póló",
+        "img": "../resources/webshop/DFW_mondd_el_polo.jpg",
+        "alt": "Poló",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú póló <strong>UNISEX</strong> kivitelben. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>90%pamut, 10% elasztán </em>. Enyhén sztreccs.",
+        "price": "6950",
+        "options": "XS, S, M, L, XL, XXL"
+    },
+    {
+        "id": "4",
+        "name": "DFW tarot póló",
+        "img": "../resources/webshop/DFW_tarot_polo.jpg",
+        "alt": "Poló",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú póló <strong>UNISEX</strong> kivitelben. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>90%pamut, 10% elasztán </em>. Enyhén sztreccs.",
+        "price": "6950",
+        "options": "XS, S, M, L, XL, XXL"
+    },
+    {
+        "id": "5",
+        "name": "DFW ujjatlan koponyás póló",
+        "img": "../resources/webshop/DFW_ujjatlan_koponya_polo.jpg",
+        "alt": "Poló",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú póló <strong>UNISEX</strong> kivitelben. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>90%pamut, 10% elasztán </em>. Enyhén sztreccs.",
+        "price": "5950",
+        "options": "XS, S, M, L, XL, XXL"
+    },
+    {
+        "id": "6",
+        "name": "DFW ujjatlan tarot póló",
+        "img": "../resources/webshop/DFW_ujjatlan_tarot_polo.jpg",
+        "alt": "Poló",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú póló <strong>UNISEX</strong> kivitelben. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>90%pamut, 10% elasztán </em>. Enyhén sztreccs.",
+        "price": "5950",
+        "options": "XS, S, M, L, XL, XXL"
+    },
+    {
+        "id": "7",
+        "name": "DFW Cropp póló",
+        "img": "../resources/webshop/DFW_crop_polo.jpg",
+        "alt": "Poló",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú póló <strong>UNISEX</strong> kivitelben. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>90%pamut, 10% elasztán </em>. Enyhén sztreccs.",
+        "price": "5950",
+        "options": "XS, S, M, L, XL, XXL"
+    },
+    {
+        "id": "8",
+        "name": "DFW Ébressz fel pulóver",
+        "img": "../resources/webshop/DFW_ebressz_fel_pulcsi.jpg",
+        "alt": "Pulóver",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú, kapucnis pulóver. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>80%pamut, 20% poliészter</em>. Enyhén sztreccs.",
+        "price": "8950",
+        "options": "S, M, L, XL, XXL"
+    },
+    {
+        "id": "9",
+        "name": "DFW Királynő pulóver",
+        "img": "../resources/webshop/DFW_kiralyno_pulcsi.jpg",
+        "alt": "Pulóver",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú, kapucnis pulóver. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>80%pamut, 20% poliészter</em>. Enyhén sztreccs.",
+        "price": "8950",
+        "options": "S, M, L, XL, XXL"
+    },
+    {
+        "id": "10",
+        "name": "DFW Mondd El pulóver",
+        "img": "../resources/webshop/DFW_mondd_el_pulcsi.jpg",
+        "alt": "Pulóver",
+        "description": "Kiváló minőségű, fekete színű, kerek nyakú, kapucnis pulóver. Színes, kopás és mosás álló szitanyomással készült. Anyaga: <em>80%pamut, 20% poliészter</em>. Enyhén sztreccs.",
+        "price": "8950",
+        "options": "S, M, L, XL, XXL"
+    },
+    {
+        "id": "11",
+        "name": "DFW baseball sapka",
+        "img": "../resources/webshop/DFW_baseball_sapka.jpg",
+        "alt": "Sapka",
+        "description": "Baseball sapka. Elején a zenekar hivatalos hímzett logója található.",
+        "price": "4950",
+        "options": "Fekete, Fehér"
+    },
+    {
+        "id": "12",
+        "name": "DFW téli sapka",
+        "img": "../resources/webshop/DFW_teli_sapka.jpg",
+        "alt": "Sapka",
+        "description": "Téli sapka. Elején a zenekar hivatalos hímzett logója található.",
+        "price": "4950",
+        "options": "Szürke, Fekete"
+    },
+    {
+        "id": "13",
+        "name": "DFW koncertjegy",
+        "img": "../resources/webshop/DFW_ticket.jpg",
+        "alt": "Koncertjegy",
+        "description": "Az elkövetkező koncertjeinkre való belépésre feljosgosító jegy. A jegyed digitális formában kapod meg, és a beléptetéskor a QR kóddal azonosítunk. <strong>Figyelem! 18 év alattiak, csak kísérővel vehetnek részt koncerteken!</strong> A jegy átruházható, részletekért írj az <em>jegyinfo@dwf.hu</em> email címre.",
+        "price": "5500",
+        "options": "-"
     }
 ]
