@@ -35,8 +35,13 @@ header{
 
 #basket_row{
     display: flex;
-    justify-content: right;
+    text-align: right;
+    display: block;
     margin: 10px;
+}
+.icon-for-basket{
+    width: 3rem;
+    height: 3rem;
 }
 
 .Navigationbar{

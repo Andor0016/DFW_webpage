@@ -60,6 +60,25 @@
         <img src="../resources/DFW_koncert.jpg" alt="koncert hangulatfoto" id="band-on-stage">
     </div>
     <h2 id="bottom-text">További dátumok hamarosan...</h2>
+    <div class="admin-panel-concerts">
+        <h3>Koncert hozzáadása:</h3>
+        <form action="../php/addconcert.php" method="post">
+            <label for="date">Dátum:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="town">Város:</label>
+            <input type="text" id="town" name="town" required>
+            <label for="place">Helyszín:</label>
+            <input type="text" id="place" name="place" required>
+            <input type="submit" value="Koncert hozzáadása">
+        </form>
+        <h3>
+            <?php
+                if(isset($_GET["response"]))
+                {
+                    echo $_GET["response"];
+                }
+            ?>
+    </div>
 </main>
 <footer>
     <hr>

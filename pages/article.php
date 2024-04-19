@@ -40,6 +40,7 @@
         <a href="./basket.php">
             <img src="../resources/logos/basket_icon.png" alt="Kosár" class="icon-for-basket">
         </a>
+    </div>
     <?php
     $webshop_data = json_decode(file_get_contents("../data/webshop.json"), true);
     foreach($webshop_data as $article) 
@@ -69,16 +70,32 @@
                 <label for="polo-meret">Válaszd ki a póló méretét:</label><br>
                 <select name="polo-meret" id="polo-meret">
                     <?php
-                        foreach($article_options as $option)
+                        if($_GET['id'] == 0)
                         {
-                        ?>
-                            <option value=<?php echo $option; ?>><?php echo $option; ?></option>";
-                        <?php
+                            $concert_data = json_decode(file_get_contents("../data/concerts.json"), true);
+                            foreach($concert_data as $concert)
+                            {
+                                if($concert["date"] >= date("Y-m-d"))
+                                {
+                                ?>
+                                    <option value=<?php echo $concert['date'] . " " . $concert['town']; ?>><?php echo $concert['date'] . " " . $concert['town']; ?></option>
+                                <?php
+                                }
+                            }
+                        }
+                        else
+                        {
+                            foreach($article_options as $option)
+                            {
+                            ?>
+                                <option value=<?php echo $option; ?>><?php echo $option; ?></option>";
+                            <?php
+                            }
                         }
                         ?>
                         </select> <br>
                 <label for="mennyiseg">Mennyiség:</label><br>
-                <input type="number" name="mennyiseg" id="mennyiseg"> <br>
+                <input type="number" name="mennyiseg" id="mennyiseg" min="1"> <br>
                 <input type="submit" value="Kosárba teszem" class="to-basket-button">
             </form>
         </div>
