@@ -95,7 +95,7 @@
                         ?>
                         </select> <br>
                 <label for="mennyiseg">Mennyiség:</label><br>
-                <input type="number" name="mennyiseg" id="mennyiseg" min="1"> <br>
+                <input type="number" name="mennyiseg" id="mennyiseg" min="1" value="1"> <br>
                 <input type="submit" value="Kosárba teszem" class="to-basket-button">
             </form>
         </div>

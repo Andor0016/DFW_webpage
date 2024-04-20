@@ -50,7 +50,7 @@
                     <td> <?php echo $concert["date"]; ?> </td>
                     <td> <?php echo $concert["town"]; ?> </td>
                     <td> <?php echo$concert["place"]; ?> </td>
-                    <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
+                    <td><a href="./article.php?id=0">Jegyvásárlás</a></td>
                     </tr>
                     <?php 
                     }
@@ -73,11 +73,13 @@
         </form>
         <h3>
             <?php
+                $mssg = json_decode(file_get_contents("../data/responsemessages.json"), true);
                 if(isset($_GET["response"]))
                 {
-                    echo $_GET["response"];
+                    echo $mssg[$_GET["response"]];
                 }
             ?>
+        </h3>
     </div>
 </main>
 <footer>

@@ -7,6 +7,6 @@
     );
     array_push($concerts_data, $new_concert);
     file_put_contents("../data/concerts.json", json_encode($concerts_data));
-    header("Location: ../pages/concerts.php?response=Sikeres hozzáadás!");
+    header("Location: ../pages/concerts.php?response=successforadd");
     exit();
 ?>

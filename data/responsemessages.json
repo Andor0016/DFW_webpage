@@ -1,0 +1,12 @@
+{
+    "successforadd" : "Sikeres hozzáadás",
+    "unsuccesfullforadd" : "Sikertelen hozzáadás",
+    "botmembers" : "A csapattagokról publikus információkat a <a href='../pages/members.php'>Tagok</a> oldalon találsz.",
+    "botconcerts" : "A koncertekről publikus információkat a <a href='../pages/concerts.php'>Koncertek</a> oldalon találsz. Jegyvásárláshoz pedig keresd fel a <a href='../pages/websho.php'>Webshopunk</a>.",
+    "botcontact" : "A kapcsolat oldalon feltett kérdésekre, emailben válaszol munkatársunk, amint lehetősége adódik rá.",
+    "botwebshop" : "A webshopunkon keresztül vásárolhatsz jegyeket a koncertjeinkre, valamint egyedi termékeket is vásárolhatsz.",
+    "botarticle" : "A termékek magas minőségű anyagokból készülnek, és a legújabb technológiával készülnek.",
+    "botaccount" : "A felhasználói fiók előnye, hogy gyorsabban tudsz jegyet vásárolni, és a szállítási adataidat is könnyebben tudod kezelni.",
+    "botband" : "A zenekarunkat a <a href='www.instagram.com/downforwhateverofficial'> hivatalos instagram oldalán</a> tudod elérni.",
+    "botdefault" : "Sajnálomm, erre még nem tudok választ adni."
+}
