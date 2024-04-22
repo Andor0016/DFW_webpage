@@ -26,13 +26,21 @@
         </a>
         <div class="Navigationbar">
             <a href="#" class="active">Kezdőlap</a>
-            <a href="pages/members.html">Tagok</a>
+            <a href="pages/members.php">Tagok</a>
             <a href="pages/concerts.php">Koncertek</a>
             <a href="pages/discography.php">Diszkográfia</a>
-            <a href="pages/contact.html">Kapcsolat</a>
+            <a href="pages/contact.php">Kapcsolat</a>
             <a href="pages/webshop.php">Webshop</a>
-            <a href="pages/chatbot.html">Chatbot</a>
-            <a href="pages/login.html">Bejelentkezés</a>
+            <a href="pages/chatbot.php">Chatbot</a>
+            <?php
+            session_start(); 
+            if($_SESSION['isLogged'] == true){ ?>
+                <a href="pages/profile/myprofile.php">Fiókom</a>
+                <?php
+            }
+            else{?>
+                <a href="pages/login.php">Bejelentkezés</a>
+                <?php } ?>
         </div>
         <hr>
     </header>
@@ -76,7 +84,7 @@
                     <td> <?php echo $concert["date"]; ?> </td>
                     <td> <?php echo $concert["town"]; ?> </td>
                     <td> <?php echo$concert["place"]; ?> </td>
-                    <td><a href="./webshop/ticket.html">Jegyvásárlás</a></td>
+                    <td><a href="./pages/article.php?id=0">Jegyvásárlás</a></td>
                     </tr>
                     <?php 
                     $i++ ;

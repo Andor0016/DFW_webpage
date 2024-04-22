@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "name": "admin",
+        "email": "admin@dfw.hu",
+        "password": "admin",
+        "phone": "06202020202",
+        "address": "Budapest, 1111, Kossuth u. 1.",
+        "role": "admin"
+    },
+    {
+        "id": 1,
+        "name": "norman",
+        "email": "norm@asd.hu",
+        "password": "normi",
+        "phone": "06202020203",
+        "address": "Budapest, 1111, Kossuth u. 14.",
+        "role": "user"
+    }
+]

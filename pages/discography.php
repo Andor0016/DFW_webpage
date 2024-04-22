@@ -25,14 +25,22 @@
         <img src="../resources/logos/DFW_LOGO_WHT.png" alt="Down For Whatever" title="Down For Whatever" id="band-logo-header">
     </a>
     <div class="Navigationbar">
-        <a href="../index.php">Kezdőlap</a>
-        <a href="./members.html">Tagok</a>
-        <a href="./concerts.php">Koncertek</a>
-        <a href="#" class="active">Diszkográfia</a>
-        <a href="./contact.html">Kapcsolat</a>
-        <a href="./webshop.php">Webshop</a>
-        <a href="./chatbot.html">Chatbot</a>
-        <a href="./login.html">Bejelentkezés</a>
+        <a href="../index.php" >Kezdőlap</a>
+            <a href="./members.php">Tagok</a>
+            <a href="./concerts.php">Koncertek</a>
+            <a href="#" class="active">Diszkográfia</a>
+            <a href="./contact.php">Kapcsolat</a>
+            <a href="./webshop.php">Webshop</a>
+            <a href="./chatbot.php">Chatbot</a>
+            <?php
+            session_start(); 
+            if($_SESSION['isLogged'] == true){ ?>
+                <a href="./profile/myprofile.php">Fiókom</a>
+                <?php
+            }
+            else{?>
+                <a href="./login.php">Bejelentkezés</a>
+                <?php } ?>
     </div>
     <hr>
 </header>
@@ -54,8 +62,8 @@
                 { ?>
                     <tr>
                     <td>
-                        <a href= <?php echo $album["spotify"]; ?> target=”_blank”>
-                            <img src= <?php echo $album["img"]; ?> alt= <?php echo $album["alt"]; ?> >
+                        <a href="<?php echo $album["spotify"]; ?>" target=”_blank”>
+                            <img src="<?php echo $album["img"]; ?>" alt="<?php echo $album["alt"]; ?>" >
                         </a>
                     </td>
                     <td> <?php echo $album["name"]; ?> </td>
@@ -74,8 +82,8 @@
                 { ?>
                     <tr>
                     <td>
-                        <a href= <?php echo $single["spotify"]; ?> target=”_blank”>
-                            <img src= <?php echo $single["img"]; ?> alt= <?php echo $single["alt"]; ?> >
+                        <a href="<?php echo $single["spotify"]; ?>" target=”_blank”>
+                            <img src="<?php echo $single["img"]; ?>" alt="<?php echo $single["alt"]; ?>" >
                         </a>
                     </td>
                     <td> <?php echo $single["name"]; ?></td>

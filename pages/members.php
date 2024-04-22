@@ -25,14 +25,22 @@
         <img src="../resources/logos/DFW_LOGO_WHT.png" alt="Down For Whatever" title="Down For Whatever" id="band-logo-header">
     </a>
     <div class="Navigationbar">
-        <a href="../index.php">Kezdőlap</a>
-        <a href="#" class="active">Tagok</a>
-        <a href="./concerts.php">Koncertek</a>
-        <a href="./discography.php">Diszkográfia</a>
-        <a href="./contact.html">Kapcsolat</a>
-        <a href="./webshop.php">Webshop</a>
-        <a href="./chatbot.html">Chatbot</a>
-        <a href="./login.html">Bejelentkezés</a>
+            <a href="../index.php" >Kezdőlap</a>
+            <a href="#" class="active">Tagok</a>
+            <a href="./concerts.php">Koncertek</a>
+            <a href="./discography.php">Diszkográfia</a>
+            <a href="./contact.php">Kapcsolat</a>
+            <a href="./webshop.php">Webshop</a>
+            <a href="./chatbot.php">Chatbot</a>
+            <?php
+            session_start(); 
+            if($_SESSION['isLogged'] == true){ ?>
+                <a href="./profile/myprofile.php">Fiókom</a>
+                <?php
+            }
+            else{?>
+                <a href="./login.php">Bejelentkezés</a>
+                <?php } ?>
     </div>
     <hr>
 </header>
