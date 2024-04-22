@@ -15,3 +15,16 @@ main{
 #chat-area hr{
     width: 95%;
 }
+
+#info-area{
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 2px solid #731010;
+    background-color: #A80000;
+    color: #d4d4d4;
+}
+
+#info-area p{
+    background-color: #A80000;
+}

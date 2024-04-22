@@ -37,7 +37,17 @@
     <hr>
 </header>
 <main>
-
+    <form action="../php/addarticle.php" method="post" enctype="multipart/form-data">
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="price">Ár:</label>
+        <input type="number" id="price" name="price" required>
+        <label for="img">Kép:</label>
+        <input type="file" id="img" name="img" required>
+        <label for="description">Leírás:</label>
+        <textarea id="description" name="description" required></textarea>
+        <input type="submit" value="Hozzáadás">
+    </form>
 </main>
 <footer>
     <hr>

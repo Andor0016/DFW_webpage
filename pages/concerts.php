@@ -34,7 +34,7 @@
             <a href="./chatbot.php">Chatbot</a>
             <?php
             session_start(); 
-            if($_SESSION['isLogged'] == true){ ?>
+            if(isset($_SESSION['isLogged']) && $_SESSION['isLogged'] == true){ ?>
                 <a href="./profile/myprofile.php">Fiókom</a>
                 <?php
             }
@@ -69,7 +69,7 @@
     </div>
     <h2 id="bottom-text">További dátumok hamarosan...</h2>
     <?php
-        if($_SESSION['role'] == "admin"){ ?>
+        if(isset($_SESSION['role']) && $_SESSION['role'] == "admin"){ ?>
     <div class="admin-panel-concerts">
         <h3>Koncert hozzáadása:</h3>
         <form action="../php/addconcert.php" method="post">

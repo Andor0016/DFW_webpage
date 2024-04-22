@@ -62,3 +62,16 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#admin-table{
+    width: 60rem;
+    margin: 0.5rem;
+    margin: auto;
+    border-collapse: collapse;
+}   
+
+#admin-table td, th{
+    padding: 0.5rem;
+    font-size: 110%;
+    border: 0.1rem solid #d4d4d4;
+}

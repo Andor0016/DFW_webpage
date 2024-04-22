@@ -39,7 +39,7 @@
 <main>
     <div class="flexbox">
         <div id="register-box">
-            <form method="GET" class="login-register-base">
+            <form method="POST" class="login-register-base">
                 <h2>Regisztráció:</h2>
                 <label for="nev">Név:</label><br>
                 <input type="text" name="nev" id="nev" placeholder="Példa János"><br>
@@ -55,7 +55,7 @@
             </form>
         </div>
         <div id="login-box">
-            <form method="GET" class="login-register-base">
+            <form method="POST" class="login-register-base" action="../php/logintoaccount.php">
                 <h2>Bejelentkezés:</h2>
                 <label for="mail-login">E-mail cím:</label><br>
                 <input type="email" name="mail-login" id="mail-login" placeholder="pelda.janos@dfw.com"><br>

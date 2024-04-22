@@ -8,7 +8,7 @@
     <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
     <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/contactpage.css">
+    <link rel="stylesheet" href="../styles/chatbotpage.css">
     <link rel="icon" type="image/x-icon" href="../resources/DFW_Logo.ico">
 </head>
 <body>
@@ -29,38 +29,25 @@
         <a href="./members.html">Tagok</a>
         <a href="./concerts.php">Koncertek</a>
         <a href="./discography.php">Diszkográfia</a>
-        <a href="#" class="active">Kapcsolat</a>
+        <a href="./contact.html">Kapcsolat</a>
         <a href="./webshop.php">Webshop</a>
-        <a href="./chatbot.html">Chatbot</a>
+        <a href="#" class="active">Chatbot</a>
         <a href="./login.html">Bejelentkezés</a>
     </div>
     <hr>
 </header>
 <main>
-    <div class="flexbox">
-        <img src="../resources/DFW_contact.jpg" alt="Zenekari pacsi" id="contact-image">
-        <form method="GET" id="mssg-form-base">
-            <label for="nev">Név:</label><br>
-            <input type="text" name="nev" id="nev" placeholder="Példa János"><br>
-            <label for="mail">E-mail cím:</label><br>
-            <input type="email" name="mail" id="mail" placeholder="pelda.janos@dfw.com"><br>
-            <label for="tszam">Telefonszám:</label><br>
-            <input type="text" name="tszam" id="tszam" placeholder="06200000000"><br>
-            <label for="mssg">Üzenet:</label><br>
-            <textarea name="mssg" id="mssg" maxlength="1000" placeholder="Ide írd az üzeneted"></textarea><br>
-            <input type="submit" value="Küldés" class="mssg-form-button">
-        </form>
-    </div>
-    <div id="contact-social-buttons">
-        <button onClick="window.location.href='http://www.instagram.com/downforwhateverofficial';">
-            Instagram oldalunk
-        </button>
-        <button onClick="window.location.href='http://www.facebook.com/downforwhateverofficial';">
-            Facebook oldalunk
-        </button>
-        <button onClick="window.location.href='https://www.facebook.com/groups/512450672212444';">
-            Facebook csoportunk(Brotherhood)
-        </button>
+    <div id="chat-area">
+        <div id="info-area">
+            <p>A chatbot számára a következő szavakat tudod megadni: koncertek, elérhetőség, tagok, webshop, termékek, fiók, zenekar.
+                A tanítása folyamatban van, egyelőre csak ezekre tud választ adni, ilyen formában.</p>
+        </div>
+        <div id="messages-area">
+
+        </div>
+        <hr>
+        <div id="input-area">
+        </div>
     </div>
 </main>
 <footer>

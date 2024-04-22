@@ -34,7 +34,7 @@
             <a href="pages/chatbot.php">Chatbot</a>
             <?php
             session_start(); 
-            if($_SESSION['isLogged'] == true){ ?>
+            if(isset($_SESSION['isLogged']) && $_SESSION['isLogged'] == true){ ?>
                 <a href="pages/profile/myprofile.php">Fiókom</a>
                 <?php
             }

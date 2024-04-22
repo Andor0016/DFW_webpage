@@ -8,7 +8,7 @@
     <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
     <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/webshoppage.css">
+    <link rel="stylesheet" href="../styles/contactpage.css">
     <link rel="icon" type="image/x-icon" href="../resources/DFW_Logo.ico">
 </head>
 <body>
@@ -25,12 +25,12 @@
         <img src="../resources/logos/DFW_LOGO_WHT.png" alt="Down For Whatever" title="Down For Whatever" id="band-logo-header">
     </a>
     <div class="Navigationbar">
-    <a href="../index.php" >Kezdőlap</a>
+            <a href="../index.php">Kezdőlap</a>
             <a href="./members.php">Tagok</a>
             <a href="./concerts.php">Koncertek</a>
             <a href="./discography.php">Diszkográfia</a>
-            <a href="./contact.php">Kapcsolat</a>
-            <a href="#" class="active">Webshop</a>
+            <a href="#" class="active">Kapcsolat</a>
+            <a href="./webshop.php">Webshop</a>
             <a href="./chatbot.php">Chatbot</a>
             <?php
             session_start(); 
@@ -45,34 +45,59 @@
     <hr>
 </header>
 <main>
-<div id="basket_row">
-        <a href="./basket.php">
-            <img src="../resources/logos/basket_icon.png" alt="Kosár" class="icon-for-basket">
-        </a>
-    </div>
+    <?php
+    if(isset($_SESSION['isLogged']) && $_SESSION['role'] == "admin"){ 
+        $messages = json_decode(file_get_contents("../data/messagesforband.json"), true);
+        ?>
+        <table id="admin-table">
+            <tr>
+                <th>Név</th>
+                <th>E-mail cím</th>
+                <th>Telefonszám</th>
+                <th>Üzenet</th>
+                <th>Státusz</th>
+                <th>Gombocska</th>
+            </tr>
+            <?php
+            foreach($messages as $message){ ?>
+                <tr>
+                    <td><?php echo $message["name"]; ?></td>
+                    <td><?php echo $message["mail"]; ?></td>
+                    <td><?php echo $message["mob"]; ?></td>
+                    <td><?php echo $message["message"]; ?></td>
+                    <td><?php if($message['isAnswered']){ echo "Megválaszolt";} else{echo "Nincs válasz";} ?></td>
+                    <td><a href="../php/changeStatus.php&id=<?php echo $message["id"];?>"> Megválaszolom </a></td>
+                </tr>
+            <?php } ?>
+        </table>
+    <?php }
+    else{ ?>
     <div class="flexbox">
-        <?php 
-            $webshop_data = json_decode(file_get_contents("../data/webshop.json"), true);
-
-        foreach($webshop_data as $article) 
-        { ?>
-            <div class="article-on-page">
-                <img src= <?php echo $article['img']; ?> alt= <?php echo $article['alt']; ?>>
-                <h2><?php echo $article['name']; ?></h2>
-                <h3><?php echo $article['price'] ?> HUF</h3>
-                <h5><?php echo substr($article['description'],0,30); ?>...</h5>
-                <a href="./article.php?id=<?php echo $article['id'] ?>"> Részletek</a><br>
-            </div>
-        <?php
-        }
-        if(isset($_SESSION['role']) && $_SESSION['role'] == "admin"){ ?>
-            <div class="article-on-page">
-                <img src="../resources/logos/add_plus_icon.png" alt="Elem hozzáadása">
-                <h2>Termék hozzáadása</h2>
-                <a href="./addarticle.php">Részletek</a><br>
-            </div>
-        <?php } ?>
+        <img src="../resources/DFW_contact.jpg" alt="Zenekari pacsi" id="contact-image">
+        <form method="POST" id="mssg-form-base" action="../php/addmessage.php">
+            <label for="nev">Név:</label><br>
+            <input type="text" name="nev" id="nev" placeholder="Példa János"><br>
+            <label for="mail">E-mail cím:</label><br>
+            <input type="email" name="mail" id="mail" placeholder="pelda.janos@dfw.com"><br>
+            <label for="tszam">Telefonszám:</label><br>
+            <input type="text" name="tszam" id="tszam" placeholder="06200000000"><br>
+            <label for="mssg">Üzenet:</label><br>
+            <textarea name="mssg" id="mssg" maxlength="1000" placeholder="Ide írd az üzeneted"></textarea><br>
+            <input type="submit" value="Küldés" class="mssg-form-button">
+        </form>
     </div>
+    <div id="contact-social-buttons">
+        <button onClick="window.location.href='http://www.instagram.com/downforwhateverofficial';">
+            Instagram oldalunk
+        </button>
+        <button onClick="window.location.href='http://www.facebook.com/downforwhateverofficial';">
+            Facebook oldalunk
+        </button>
+        <button onClick="window.location.href='https://www.facebook.com/groups/512450672212444';">
+            Facebook csoportunk(Brotherhood)
+        </button>
+    </div>
+    <?php } ?>
 </main>
 <footer>
     <hr>
