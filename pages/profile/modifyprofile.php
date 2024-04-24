@@ -1,3 +1,10 @@
+<?php
+        session_start();
+        if(!isset($_SESSION["isLogged"]) || $_SESSION["isLogged"] !== true){
+            header("location: ../../index.php");
+            exit;
+        }
+ ?>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -25,30 +32,29 @@
         <img src="../../resources/logos/DFW_LOGO_WHT.png" alt="Down For Whatever" title="Down For Whatever" id="band-logo-header">
     </a>
     <div class="Navigationbar">
-        <a href="../../index.php">Kezdőlap</a>
-        <a href="../members.html">Tagok</a>
-        <a href="../concerts.php">Koncertek</a>
-        <a href="../discography.php">Diszkográfia</a>
-        <a href="../contact.html" >Kapcsolat</a>
-        <a href="../webshop.php">Webshop</a>
-        <a href="../login.html" class="active">Bejelentkezés</a>
+            <a href="../../index.php">Kezdőlap</a>
+            <a href="../members.php">Tagok</a>
+            <a href="../concerts.php">Koncertek</a>
+            <a href="../discography.php">Diszkográfia</a>
+            <a href="../contact.php">Kapcsolat</a>
+            <a href="../webshop.php">Webshop</a>
+            <a href="../chatbot.php">Chatbot</a>
+            <a href="#" class="active">Fiókom</a>
     </div>
     <hr>
 </header>
 <main>
     <div class="flexbox">
-        <form method="GET" class="modify-profile-data">
+        <form method="POST" class="modify-profile-data" action="../../php/updateprofile.php">
             <h2>Adat módosítás: *</h2>
             <label for="nev">Név:</label><br>
-            <input type="text" name="nev" id="nev" value="Példa János"><br>
+            <input type="text" name="nev" id="nev" value="<?php echo $_SESSION['user']['name']; ?>"><br>
             <label for="mail">E-mail cím:</label><br>
-            <input type="email" name="mail" id="mail" value="pelda.janos@dfw.com"><br>
+            <input type="email" name="mail" id="mail" value="<?php echo $_SESSION['user']['email']; ?>"><br>
             <label for="tszam">Telefonszám(opcionális):</label><br>
-            <input type="text" name="tszam" id="tszam" value="06202020202"><br>
+            <input type="text" name="tszam" id="tszam" value="<?php echo $_SESSION['user']['phone']; ?>"><br>
             <label for="adress">Posta cím(opcionális):</label><br>
-            <input type="text" name="adress" id="adress" value="6720, Szeged, Korányi fasor utca 8-10."><br>
-            <label for="bday">Születési dátum(opcionális):</label><br>
-            <input type="date" name="bday" id="bday" value="1969-06-09"><br>
+            <input type="text" name="adress" id="adress" value="<?php echo $_SESSION['user']['address']; ?>"><br>
             <h3>Jelszó módosítása:</h3>
             <label for="old-pass">Aktuális jelszó:</label><br>
                 <input type="password" name="old-pass" id="old-pass"><br>

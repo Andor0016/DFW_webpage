@@ -3,7 +3,7 @@
         "id": 0,
         "name": "admin",
         "email": "admin@dfw.hu",
-        "password": "admin",
+        "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
         "phone": "06202020202",
         "address": "Budapest, 1111, Kossuth u. 1.",
         "role": "admin"
@@ -12,7 +12,7 @@
         "id": 1,
         "name": "norman",
         "email": "norm@asd.hu",
-        "password": "normi",
+        "password": "4889e6086e60b206ef337932ce6a64457106fbc0d452afee21839ae15ed4fbb2",
         "phone": "06202020203",
         "address": "Budapest, 1111, Kossuth u. 14.",
         "role": "user"

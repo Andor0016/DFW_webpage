@@ -1,3 +1,10 @@
+<?php
+        session_start();
+        if(!isset($_SESSION["isLogged"]) || $_SESSION["isLogged"] !== true){
+            header("location: ../../index.php");
+            exit;
+        }
+ ?>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -25,29 +32,28 @@
         <img src="../../resources/logos/DFW_LOGO_WHT.png" alt="Down For Whatever" title="Down For Whatever" id="band-logo-header">
     </a>
     <div class="Navigationbar">
-        <a href="../../index.php">Kezdőlap</a>
-        <a href="../members.html">Tagok</a>
-        <a href="../concerts.php">Koncertek</a>
-        <a href="../discography.php">Diszkográfia</a>
-        <a href="../contact.html" >Kapcsolat</a>
-        <a href="../webshop.php">Webshop</a>
-        <a href="../login.html" class="active">Bejelentkezés</a>
+    <a href="../../index.php">Kezdőlap</a>
+            <a href="../members.php">Tagok</a>
+            <a href="../concerts.php">Koncertek</a>
+            <a href="../discography.php">Diszkográfia</a>
+            <a href="../contact.php">Kapcsolat</a>
+            <a href="../webshop.php">Webshop</a>
+            <a href="../chatbot.php">Chatbot</a>
+            <a href="#" class="active">Fiókom</a>
     </div>
     <hr>
 </header>
 <main>
     <div class="flexbox">
         <div id="user-data">
-            <!--Amint lesz rendes adat, szét lesz szedve rendesen-->
-            <p class="data-type">Név: Példa János</p>
-            <p class="data-type">E-mail cím: pelda.janos@dfw.hu</p>
-            <p class="data-type">Telefonszám(opcionális): 06202020202</p>
-            <p class="data-type">Posta cím(opcionális): 6720, Szeged, Korányi fasor utca 8-10.</p>
-            <p class="data-type">Születési dátum:(opcionális): 1969-06-09</p>
+            <p class="data-type">Név: <?php echo $_SESSION['user']['name']; ?></p>
+            <p class="data-type">E-mail cím: <?php echo $_SESSION['user']['email']; ?></p>
+            <p class="data-type">Telefonszám: <?php echo $_SESSION['user']['phone']; ?></p>
+            <p class="data-type">Posta cím(opcionális): <?php echo $_SESSION['user']['address']; ?></p>
             <div id="button">
-                <a href="./modifyprofile.html">Adatok módosítása</a><br>
-                <a href="#">Fiók törlése</a><br>
-                <a href="#">Kijelentkezés</a>
+                <a href="./modifyprofile.php">Adatok módosítása</a><br>
+                <a href="../../php/deleteUser.php">Fiók törlése</a><br>
+                <a href="../../php/logout.php">Kijelentkezés</a>
             </div>
         </div>
     </div>

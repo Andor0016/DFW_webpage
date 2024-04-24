@@ -12,6 +12,7 @@
         $messages = json_decode(file_get_contents('../data/messagesforband.json'),true);
     
         $element =  array(
+            "id" => count($messages)+1,
             "name" => $nev,
             "mail" => $mail,
             "mob" => $tszam,

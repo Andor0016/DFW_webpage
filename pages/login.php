@@ -39,7 +39,7 @@
 <main>
     <div class="flexbox">
         <div id="register-box">
-            <form method="POST" class="login-register-base">
+            <form method="POST" class="login-register-base" action="../php/adduser.php">
                 <h2>Regisztráció:</h2>
                 <label for="nev">Név:</label><br>
                 <input type="text" name="nev" id="nev" placeholder="Példa János"><br>

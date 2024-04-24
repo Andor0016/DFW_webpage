@@ -28,3 +28,35 @@ main{
 #info-area p{
     background-color: #A80000;
 }
+
+.messages-area{
+    margin: 1rem;
+    background-color: #707070;
+}
+
+.message{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #d4d4d4;
+    color: #707070;
+}
+
+.message p{
+    background-color: #d4d4d4;
+    color: #707070;
+}
+
+#input-area{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #707070;
+    color: #d4d4d4;
+}
+
+#input-area a{
+    padding: 5px;
+    background-color: #707070;
+    color: #d4d4d4;
+}
