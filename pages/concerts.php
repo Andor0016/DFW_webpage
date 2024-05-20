@@ -2,8 +2,7 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Báló Andor - C8PJ6K">
-    <meta name="author" content="Szili Dominik - AUK2C8">
+    <meta name="author" content="Báló Andor">
     <meta name="description" content="Webterv projekt, a Down For Whatever zenekar általunk újragondolt változata.">
     <meta name="keywords" content="Down For Whatever, DFW, zenekar, Mondd el">
     <title>Down For Whatever</title>
@@ -31,7 +30,6 @@
             <a href="./discography.php">Diszkográfia</a>
             <a href="./contact.php">Kapcsolat</a>
             <a href="./webshop.php">Webshop</a>
-            <a href="./chatbot.php">Chatbot</a>
             <?php
             session_start(); 
             if(isset($_SESSION['isLogged']) && $_SESSION['isLogged'] == true){ ?>
